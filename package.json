@@ -4,8 +4,8 @@
     "description": "webpack5 demo",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack serve  ./main.js",
-        "build": "webpack ./main.js"
+        "dev": "webpack serve",
+        "build": "webpack"
     },
     "keywords": [],
     "author": "",
