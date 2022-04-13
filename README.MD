@@ -6,7 +6,7 @@
 
 
 
-<div style="font-size:100px;text-align:center;">打包</div>
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_dabao.png)
 
 ## 好啥子好处？
 
