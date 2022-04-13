@@ -2,7 +2,7 @@
 
 [官网](https://webpack.js.org/)
 
-![](.\img\webpack_base.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_base.png)
 
 
 
@@ -135,15 +135,15 @@ module.exports = {
 
 实际将 process.env.NODE_ENV 改为对应的选项。
 
-| 选项        | 打包后表现                        | 特点                                                  |
-| ----------- | --------------------------------- | ----------------------------------------------------- |
-| development | ![](.\img\webpack_dev.png)        | 开发模式，打包更加快速，省了代码优化步骤              |
-| production  | ![](.\img\webpack_production.png) | 生产模式，打包比较慢，会开启 tree-shaking 和 压缩代码 |
-| none        | ![](.\img\webpack_none.png)       |                                                       |
+| 选项        | 打包后表现                                                   | 特点                                                  |
+| ----------- | ------------------------------------------------------------ | ----------------------------------------------------- |
+| development | ![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_dev.png) | 开发模式，打包更加快速，省了代码优化步骤              |
+| production  | ![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_production.png) | 生产模式，打包比较慢，会开启 tree-shaking 和 压缩代码 |
+| none        | ![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_none.png) |                                                       |
 
 
 
-![](.\img\webpack_adm.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_adm.png)
 
 
 
@@ -165,7 +165,7 @@ npm i webpack webpack-cli -D
 
 ## 自建项目结构
 
-![](.\img\webpack_path.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_path.png)
 
 ## 初始配置
 
@@ -244,7 +244,7 @@ npm run build
 
 然后报错
 
-![](.\img\webpack_less_error.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_less_error.png)
 
 按照之前的理论，需要按照对less文件对应loader来处理。
 
@@ -341,13 +341,13 @@ module.exports = {
 npm run dev
 ```
 
-![](.\img\webpack_less_end.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_less_end.png)
 
 # 4.优化 TODO
 
 # 5.原理
 
-![](.\img\webpack_theory.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/webpack_theory.png)
 
 ## 流程概括
 
@@ -371,7 +371,7 @@ Webpack 的运行流程是一个串行的过程，从启动到结束会依次执
 
 [官网](https://www.vitejs.net/)
 
-![](.\img\vite.png)
+![](https://raw.githubusercontent.com/TheShining/webpack5-demo/master/img/vite.png)
 
 Vite 通过在一开始将应用中的模块区分为 **依赖** 和 **源码** 两类，改进了开发服务器启动时间。
 
@@ -382,3 +382,12 @@ Vite 通过在一开始将应用中的模块区分为 **依赖** 和 **源码** 
 - **源码** 通常包含一些并非直接是 JavaScript 的文件，需要转换（例如 JSX，CSS 或者 Vue/Svelte 组件），时常会被编辑。同时，并不是所有的源码都需要同时被加载（例如基于路由拆分的代码模块）。
 
   Vite 以 [原生 ESM](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) 方式提供源码。这实际上是让浏览器接管了打包程序的部分工作：Vite 只需要在浏览器请求源码时进行转换并按需提供源码。根据情景动态导入代码，即只在当前屏幕上实际使用时才会被处理。
+
+# 7.参考
+
+webpack 官网 ：https://webpack.js.org/concepts/
+
+掘金：[【万字】透过分析 webpack 面试题，构建 webpack5.x 知识体系](https://juejin.cn/post/7023242274876162084#heading-9)
+
+掘金：[2020年了,再不会webpack敲得代码就不香了(近万字实战)](https://juejin.cn/post/6859538537830858759)
+
